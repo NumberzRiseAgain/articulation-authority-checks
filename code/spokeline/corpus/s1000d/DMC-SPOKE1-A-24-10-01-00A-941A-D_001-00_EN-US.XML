@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SURROGATE. Authored by Numberz.ai. Not Navy technical data. -->
+<dmodule>
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent><dmCode modelIdentCode="SPOKE1" systemCode="24" subSystemCode="1"
+        subSubSystemCode="0" assyCode="01" disassyCode="00" infoCode="941"/></dmIdent>
+      <dmAddressItems><dmTitle><techName>Front wheel and brake assembly</techName>
+        <infoName>Illustrated parts data</infoName></dmTitle></dmAddressItems>
+    </dmAddress>
+    <dmStatus><security securityClassification="01"/>
+      <dataRestrictions>Distribution Statement A. Approved for public release.</dataRestrictions>
+    </dmStatus>
+  </identAndStatusSection>
+  <content><illustratedPartsCatalog>
+    <catalogSeqNumber item="001" partNumber="SPK-1000" parent=""><partName>frame</partName></catalogSeqNumber>
+    <catalogSeqNumber item="002" partNumber="SPK-1100" parent="SPK-1000"><partName>fork</partName></catalogSeqNumber>
+    <catalogSeqNumber item="003" partNumber="SPK-1110" parent="SPK-1100"><partName>handlebar</partName></catalogSeqNumber>
+    <catalogSeqNumber item="004" partNumber="SPK-1200" parent="SPK-1100"><partName>front wheel</partName></catalogSeqNumber>
+    <catalogSeqNumber item="005" partNumber="SPK-1210" parent="SPK-1200"><partName>axle skewer</partName></catalogSeqNumber>
+    <catalogSeqNumber item="006" partNumber="SPK-1211" parent="SPK-1210"><partName>skewer lever</partName></catalogSeqNumber>
+    <catalogSeqNumber item="007" partNumber="SPK-1212" parent="SPK-1210"><partName>quick release nut</partName></catalogSeqNumber>
+    <catalogSeqNumber item="008" partNumber="SPK-1300" parent="SPK-1100"><partName>brake caliper arm left</partName></catalogSeqNumber>
+    <catalogSeqNumber item="009" partNumber="SPK-1301" parent="SPK-1100"><partName>brake caliper arm right</partName></catalogSeqNumber>
+    <catalogSeqNumber item="010" partNumber="SPK-1310" parent="SPK-1300"><partName>brake pad left</partName></catalogSeqNumber>
+    <catalogSeqNumber item="011" partNumber="SPK-1311" parent="SPK-1301"><partName>brake pad right</partName></catalogSeqNumber>
+    <catalogSeqNumber item="012" partNumber="SPK-1400" parent="SPK-1110"><partName>brake lever</partName></catalogSeqNumber>
+    <catalogSeqNumber item="013" partNumber="SPK-1500" parent="SPK-1100"><partName>fender bolt</partName></catalogSeqNumber>
+  </illustratedPartsCatalog></content>
+</dmodule>

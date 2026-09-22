@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SURROGATE. Authored by Numberz.ai. Not Navy technical data. -->
+<dmodule>
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent><dmCode modelIdentCode="SPOKE1" systemCode="24" subSystemCode="1"
+        subSubSystemCode="0" assyCode="02" disassyCode="00" infoCode="720"/></dmIdent>
+      <dmAddressItems><dmTitle><techName>Fender bolt</techName>
+        <infoName>Install procedure</infoName></dmTitle></dmAddressItems>
+    </dmAddress>
+    <dmStatus><security securityClassification="01"/>
+      <dataRestrictions>Distribution Statement A. Approved for public release.</dataRestrictions>
+    </dmStatus>
+  </identAndStatusSection>
+  <content><procedure>
+    <preliminaryRqmts>
+      <reqSupportEquipDescrGroup>
+        <supportEquipDescr id="tool-tw"><name>Torque wrench, 0 to 20 N.m</name></supportEquipDescr>
+      </reqSupportEquipDescrGroup>
+    </preliminaryRqmts>
+    <mainProcedure>
+      <proceduralStep id="stp-110" partRef="SPK-1500" motion="revolute" axis="Z" sense="positive"
+                      travelStart="0" travelEnd="1080" travelUnit="deg"
+                      toolRef="tool-tw" torque="5" torqueUnit="Nm">
+        <caution id="cau-110">Do not exceed 5 N.m. The fender mount will strip.</caution>
+        <para>Install the fender bolt and torque to 5 N.m.</para>
+      </proceduralStep>
+    </mainProcedure>
+  </procedure></content>
+</dmodule>

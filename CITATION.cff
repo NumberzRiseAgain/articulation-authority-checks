@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "SPOKELINE: articulation authority checks for 3D maintenance training"
+message: "If you use this software, please cite it."
+type: software
+authors:
+  - family-names: Venkat
+    given-names: Raghu
+    affiliation: "Numberz.ai Inc."
+  - family-names: Anjali
+    given-names: Tricha
+    affiliation: "Numberz.ai Inc."
+repository-code: "https://github.com/NumberzRiseAgain/articulation-authority-checks"
+license: MIT
+date-released: 2026-09-19

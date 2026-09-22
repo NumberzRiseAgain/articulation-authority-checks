@@ -1,0 +1,90 @@
+{
+  "generated": "2026-09-19T17:05:40.269371Z",
+  "seed": 20260902,
+  "trials_per_class": 50,
+  "corpus": {
+    "data_modules": 4,
+    "parts": 13,
+    "joints": 9,
+    "procedural_steps": 6,
+    "constraints": 7,
+    "marking_custody": "4/4"
+  },
+  "clean_control": {
+    "runs": 50,
+    "false_positive_runs": 0,
+    "false_positive_rate": 0.0,
+    "advisories_per_run": 2
+  },
+  "detection": {
+    "F1 wrong-part binding": {
+      "trials": 50,
+      "detected": 49,
+      "rate": 0.98,
+      "checks_that_fired": {
+        "C1": 106,
+        "C5": 73
+      }
+    },
+    "F2 inverted joint axis": {
+      "trials": 50,
+      "detected": 41,
+      "rate": 0.82,
+      "checks_that_fired": {
+        "C3": 28,
+        "C2": 13
+      }
+    },
+    "F3 out-of-range travel": {
+      "trials": 50,
+      "detected": 50,
+      "rate": 1.0,
+      "checks_that_fired": {
+        "C3": 50
+      }
+    },
+    "F4 step transposition": {
+      "trials": 50,
+      "detected": 50,
+      "rate": 1.0,
+      "checks_that_fired": {
+        "C4": 109
+      }
+    },
+    "F5 dropped safety condition": {
+      "trials": 50,
+      "detected": 50,
+      "rate": 1.0,
+      "checks_that_fired": {
+        "C6": 50
+      }
+    },
+    "F6 phantom step": {
+      "trials": 50,
+      "detected": 50,
+      "rate": 1.0,
+      "checks_that_fired": {
+        "C7": 50,
+        "C4": 47
+      }
+    }
+  },
+  "overall": {
+    "faults": 300,
+    "detected": 290,
+    "rate": 0.9667
+  },
+  "residual": [
+    {
+      "class": "F2 inverted joint axis",
+      "injected": "inverted the driven direction of step stp-110",
+      "occurrences": 9
+    },
+    {
+      "class": "F1 wrong-part binding",
+      "injected": "bound SPK-1212 and SPK-1211 to each other's geometry",
+      "occurrences": 1
+    }
+  ],
+  "wall_clock_seconds": 0.32
+}

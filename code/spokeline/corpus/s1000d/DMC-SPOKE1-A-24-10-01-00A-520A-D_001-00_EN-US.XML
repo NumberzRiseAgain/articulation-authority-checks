@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SURROGATE. Authored by Numberz.ai. Not Navy technical data. -->
+<dmodule>
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent><dmCode modelIdentCode="SPOKE1" systemCode="24" subSystemCode="1"
+        subSubSystemCode="0" assyCode="01" disassyCode="00" infoCode="520"/></dmIdent>
+      <dmAddressItems><dmTitle><techName>Front wheel</techName>
+        <infoName>Remove procedure</infoName></dmTitle></dmAddressItems>
+    </dmAddress>
+    <dmStatus><security securityClassification="01"/>
+      <dataRestrictions>Distribution Statement A. Approved for public release.</dataRestrictions>
+    </dmStatus>
+  </identAndStatusSection>
+  <content><procedure>
+    <preliminaryRqmts>
+      <reqCondGroup><reqCondNoRef><reqCond>Bicycle supported in a maintenance stand.</reqCond></reqCondNoRef></reqCondGroup>
+      <reqSupportEquipDescrGroup>
+        <supportEquipDescr id="tool-5mm"><name>5 mm hex key</name></supportEquipDescr>
+      </reqSupportEquipDescrGroup>
+    </preliminaryRqmts>
+    <mainProcedure>
+      <proceduralStep id="stp-010" partRef="SPK-1400" motion="revolute" axis="X" sense="positive"
+                      travelStart="0" travelEnd="42" travelUnit="deg">
+        <warning id="wrn-010">Do not remove the wheel with the bicycle unsupported. The machine will fall.</warning>
+        <para>Squeeze the brake lever and release the caliper quick release.</para>
+      </proceduralStep>
+      <proceduralStep id="stp-020" partRef="SPK-1211" motion="revolute" axis="Z" sense="positive"
+                      travelStart="0" travelEnd="180" travelUnit="deg">
+        <para>Open the skewer lever fully.</para>
+      </proceduralStep>
+      <proceduralStep id="stp-030" partRef="SPK-1212" motion="revolute" axis="X" sense="negative"
+                      travelStart="0" travelEnd="1800" travelUnit="deg" toolRef="tool-5mm">
+        <caution id="cau-030">Do not remove the quick release nut completely. It will be lost.</caution>
+        <para>Turn the quick release nut counter-clockwise five turns to loosen.</para>
+      </proceduralStep>
+      <proceduralStep id="stp-040" partRef="SPK-1210" motion="prismatic" axis="X" sense="positive"
+                      travelStart="0" travelEnd="150" travelUnit="mm">
+        <para>Withdraw the axle skewer from the hub.</para>
+      </proceduralStep>
+      <proceduralStep id="stp-050" partRef="SPK-1200" motion="prismatic" axis="Y" sense="positive"
+                      travelStart="0" travelEnd="120" travelUnit="mm">
+        <warning id="wrn-050">Support the wheel. It is free once the skewer is withdrawn.</warning>
+        <para>Lift the front wheel clear of the fork dropouts.</para>
+      </proceduralStep>
+    </mainProcedure>
+  </procedure></content>
+</dmodule>

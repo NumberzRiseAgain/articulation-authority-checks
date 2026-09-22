@@ -1,0 +1,42 @@
+{
+  "study": "SPOKELINE \u2014 articulation binding validator, fault injection",
+  "topic": "DON26BZ05-NV071",
+  "run_identifier": "346e4b8c6d419337",
+  "seed": 20260902,
+  "trials_per_class": 50,
+  "generated": "2026-09-19T17:05:40.429200Z",
+  "python": "3.9.6",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "libraries": "stdlib only",
+  "network": "none",
+  "gpu": "none",
+  "source_digests": {
+    "spokeline/src/aas.py": "379a88ad346c554284913f65fc592979a7a8c13b732ea96f6134312d58b7fcfd",
+    "spokeline/src/build_viewer.py": "3b009165b85ff0e06fcf0e17c2c68f6ab5048f93095d107d42e2b033b309be01",
+    "spokeline/src/checks.py": "41baf453b0b822ed3342712461ed6793260a6ec2ffbaa2b6bf2b50f638e07bfd",
+    "spokeline/src/export_gltf.py": "fa1311bebf1ca1dc0782a8e6e1794b0a91d00d9c5edcd61ed56c14860877db95",
+    "spokeline/src/geometry.py": "c7cf06740f1168b1db3b8182621c1d364d5bcae45c7ba54f1dd235bd13453d03",
+    "spokeline/src/inject.py": "050b35611eef97273b1773bccc0bbc0b5bf0b22aa611285e2244578a4e888aed",
+    "spokeline/src/make_corpus.py": "3dc0bbc46e1ae417f6a0c1c8934b88a1f076a257ff09282b52604dd28427650b",
+    "spokeline/src/run.py": "fe5990b8ddfe0b88cac10a576411541888372c6e557a410a2013b740ea0d7e3c",
+    "spokeline/src/scenario.py": "d356cf675130b03ea6907ed1d21d90c46d0f1f128c4be447e9139a9238a125db",
+    "spokeline/corpus/s1000d/DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML": "ba07f17154fe9339a847c241326311309cb3614856da82abbe075d7f32b27e40",
+    "spokeline/corpus/s1000d/DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML": "43df0d19b7c771c61b0ededed299bfd968bf16b5816894a7ff53b56064339609",
+    "spokeline/corpus/s1000d/DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML": "4296b5b85fac39ea8499de2487a6cb82dd194413e23921ba1970770839fe63e3",
+    "spokeline/corpus/s1000d/DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML": "6f70d9c811a7e22f60e43ca113219b360116f81a70c8f2d1d9e4e1a331f5c0b9"
+  },
+  "results": {
+    "spokeline_metrics.json": "8f40c065f9c367e5ac42fdf55d8c3744711f99b7fd91660d0617161059ef18b0",
+    "spokeline_ledger.json": "a0a11ab955ccfdc01d9575264384eb89ea744fd2cbd29670a16858c7481748b6",
+    "spokeline_front_wheel.gltf": "1082bc57836e202ece52d3cc1328d53a9ac4aafe100819b2317ce96c0ccebb8e",
+    "spokeline_viewer.html": "ed9850f03c2126f8f0c4b72ca6044fdb9874c80524d627e9100b375035961e5e"
+  },
+  "headline": {
+    "detected": 290,
+    "faults": 300,
+    "rate": 0.9667,
+    "false_positive_runs": 0,
+    "clean_runs": 50,
+    "wall_clock_seconds": 0.32
+  }
+}

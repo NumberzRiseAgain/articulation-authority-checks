@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+.DS_Store
+*.egg-info/
+data/triage_nv071.json
+results/triage_report*.txt
+
+# Internal pursuit reasoning, not published.
+POC_SPEC.md

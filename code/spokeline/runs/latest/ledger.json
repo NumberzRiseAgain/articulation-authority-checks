@@ -1,0 +1,578 @@
+{
+  "aas": {
+    "model": "SPOKE1",
+    "parts": {
+      "SPK-1000": {
+        "id": "SPK-1000",
+        "name": "frame",
+        "parent": null,
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item001"
+      },
+      "SPK-1100": {
+        "id": "SPK-1100",
+        "name": "fork",
+        "parent": "SPK-1000",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item002"
+      },
+      "SPK-1110": {
+        "id": "SPK-1110",
+        "name": "handlebar",
+        "parent": "SPK-1100",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item003"
+      },
+      "SPK-1200": {
+        "id": "SPK-1200",
+        "name": "front wheel",
+        "parent": "SPK-1100",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item004"
+      },
+      "SPK-1210": {
+        "id": "SPK-1210",
+        "name": "axle skewer",
+        "parent": "SPK-1200",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item005"
+      },
+      "SPK-1211": {
+        "id": "SPK-1211",
+        "name": "skewer lever",
+        "parent": "SPK-1210",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item006"
+      },
+      "SPK-1212": {
+        "id": "SPK-1212",
+        "name": "quick release nut",
+        "parent": "SPK-1210",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item007"
+      },
+      "SPK-1300": {
+        "id": "SPK-1300",
+        "name": "brake caliper arm left",
+        "parent": "SPK-1100",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item008"
+      },
+      "SPK-1301": {
+        "id": "SPK-1301",
+        "name": "brake caliper arm right",
+        "parent": "SPK-1100",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item009"
+      },
+      "SPK-1310": {
+        "id": "SPK-1310",
+        "name": "brake pad left",
+        "parent": "SPK-1300",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item010"
+      },
+      "SPK-1311": {
+        "id": "SPK-1311",
+        "name": "brake pad right",
+        "parent": "SPK-1301",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item011"
+      },
+      "SPK-1400": {
+        "id": "SPK-1400",
+        "name": "brake lever",
+        "parent": "SPK-1110",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item012"
+      },
+      "SPK-1500": {
+        "id": "SPK-1500",
+        "name": "fender bolt",
+        "parent": "SPK-1100",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML#item013"
+      }
+    },
+    "joints": {
+      "SPK-1400": {
+        "part": "SPK-1400",
+        "type": "revolute",
+        "axis": "X",
+        "lower": 0.0,
+        "upper": 42.0,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1400"
+      },
+      "SPK-1300": {
+        "part": "SPK-1300",
+        "type": "revolute",
+        "axis": "Z",
+        "lower": 0.0,
+        "upper": 12.0,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1300"
+      },
+      "SPK-1301": {
+        "part": "SPK-1301",
+        "type": "revolute",
+        "axis": "Z",
+        "lower": -12.0,
+        "upper": 0.0,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1301"
+      },
+      "SPK-1200": {
+        "part": "SPK-1200",
+        "type": "continuous",
+        "axis": "X",
+        "lower": null,
+        "upper": null,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1200"
+      },
+      "SPK-1211": {
+        "part": "SPK-1211",
+        "type": "revolute",
+        "axis": "Z",
+        "lower": 0.0,
+        "upper": 180.0,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1211"
+      },
+      "SPK-1212": {
+        "part": "SPK-1212",
+        "type": "continuous",
+        "axis": "X",
+        "lower": null,
+        "upper": null,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1212"
+      },
+      "SPK-1210": {
+        "part": "SPK-1210",
+        "type": "prismatic",
+        "axis": "X",
+        "lower": 0.0,
+        "upper": 150.0,
+        "unit": "mm",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1210"
+      },
+      "SPK-1500": {
+        "part": "SPK-1500",
+        "type": "continuous",
+        "axis": "Z",
+        "lower": null,
+        "upper": null,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1500"
+      },
+      "SPK-1100": {
+        "part": "SPK-1100",
+        "type": "continuous",
+        "axis": "Y",
+        "lower": null,
+        "upper": null,
+        "unit": "deg",
+        "source": "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML#joint:SPK-1100"
+      }
+    },
+    "steps": [
+      {
+        "id": "stp-010",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 0,
+        "part": "SPK-1400",
+        "motion": "revolute",
+        "axis": "X",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 42.0,
+        "unit": "deg",
+        "text": "Squeeze the brake lever and release the caliper quick release.",
+        "conditions": [
+          {
+            "id": "wrn-010",
+            "kind": "warning",
+            "text": "Do not remove the wheel with the bicycle unsupported. The machine will fall.",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#wrn-010"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-010"
+      },
+      {
+        "id": "stp-020",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 1,
+        "part": "SPK-1211",
+        "motion": "revolute",
+        "axis": "Z",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 180.0,
+        "unit": "deg",
+        "text": "Open the skewer lever fully.",
+        "conditions": [],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-020"
+      },
+      {
+        "id": "stp-030",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 2,
+        "part": "SPK-1212",
+        "motion": "revolute",
+        "axis": "X",
+        "sense": "negative",
+        "travel_start": 0.0,
+        "travel_end": 1800.0,
+        "unit": "deg",
+        "text": "Turn the quick release nut counter-clockwise five turns to loosen.",
+        "conditions": [
+          {
+            "id": "cau-030",
+            "kind": "caution",
+            "text": "Do not remove the quick release nut completely. It will be lost.",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#cau-030"
+          },
+          {
+            "id": "tool-5mm",
+            "kind": "tool",
+            "text": "tool required",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#tool-5mm"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-030"
+      },
+      {
+        "id": "stp-040",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 3,
+        "part": "SPK-1210",
+        "motion": "prismatic",
+        "axis": "X",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 150.0,
+        "unit": "mm",
+        "text": "Withdraw the axle skewer from the hub.",
+        "conditions": [],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-040"
+      },
+      {
+        "id": "stp-050",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 4,
+        "part": "SPK-1200",
+        "motion": "prismatic",
+        "axis": "Y",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 120.0,
+        "unit": "mm",
+        "text": "Lift the front wheel clear of the fork dropouts.",
+        "conditions": [
+          {
+            "id": "wrn-050",
+            "kind": "warning",
+            "text": "Support the wheel. It is free once the skewer is withdrawn.",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#wrn-050"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-050"
+      },
+      {
+        "id": "stp-110",
+        "dm": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML",
+        "order": 5,
+        "part": "SPK-1500",
+        "motion": "revolute",
+        "axis": "Z",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 1080.0,
+        "unit": "deg",
+        "text": "Install the fender bolt and torque to 5 N.m.",
+        "conditions": [
+          {
+            "id": "cau-110",
+            "kind": "caution",
+            "text": "Do not exceed 5 N.m. The fender mount will strip.",
+            "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#cau-110"
+          },
+          {
+            "id": "tool-tw",
+            "kind": "tool",
+            "text": "tool required",
+            "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#tool-tw"
+          },
+          {
+            "id": "stp-110:torque",
+            "kind": "torque",
+            "text": "5 Nm",
+            "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#stp-110@torque"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#stp-110"
+      }
+    ],
+    "constraints": [
+      {
+        "id": "wrn-010",
+        "kind": "warning",
+        "step": "stp-010",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#wrn-010"
+      },
+      {
+        "id": "cau-030",
+        "kind": "caution",
+        "step": "stp-030",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#cau-030"
+      },
+      {
+        "id": "tool-5mm",
+        "kind": "tool",
+        "step": "stp-030",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#tool-5mm"
+      },
+      {
+        "id": "wrn-050",
+        "kind": "warning",
+        "step": "stp-050",
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#wrn-050"
+      },
+      {
+        "id": "cau-110",
+        "kind": "caution",
+        "step": "stp-110",
+        "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#cau-110"
+      },
+      {
+        "id": "tool-tw",
+        "kind": "tool",
+        "step": "stp-110",
+        "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#tool-tw"
+      },
+      {
+        "id": "stp-110:torque",
+        "kind": "torque",
+        "step": "stp-110",
+        "value": 5.0,
+        "unit": "Nm",
+        "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#stp-110@torque"
+      }
+    ],
+    "markings": {
+      "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML": "Distribution Statement A. Approved for public release.",
+      "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML": "Distribution Statement A. Approved for public release.",
+      "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML": "Distribution Statement A. Approved for public release.",
+      "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML": "Distribution Statement A. Approved for public release."
+    },
+    "sources": [
+      "DMC-SPOKE1-A-24-10-00-00A-040A-D_001-00_EN-US.XML",
+      "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+      "DMC-SPOKE1-A-24-10-01-00A-941A-D_001-00_EN-US.XML",
+      "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML"
+    ]
+  },
+  "scenario": {
+    "model": "SPOKE1",
+    "steps": [
+      {
+        "id": "stp-010",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 0,
+        "part": "SPK-1400",
+        "motion": "revolute",
+        "axis": "X",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 42.0,
+        "unit": "deg",
+        "text": "Squeeze the brake lever and release the caliper quick release.",
+        "conditions": [
+          {
+            "id": "wrn-010",
+            "kind": "warning",
+            "text": "Do not remove the wheel with the bicycle unsupported. The machine will fall.",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#wrn-010"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-010",
+        "segment": [
+          "seg-lever"
+        ]
+      },
+      {
+        "id": "stp-020",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 1,
+        "part": "SPK-1211",
+        "motion": "revolute",
+        "axis": "Z",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 180.0,
+        "unit": "deg",
+        "text": "Open the skewer lever fully.",
+        "conditions": [],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-020",
+        "segment": [
+          "seg-qrlever"
+        ]
+      },
+      {
+        "id": "stp-030",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 2,
+        "part": "SPK-1212",
+        "motion": "revolute",
+        "axis": "X",
+        "sense": "negative",
+        "travel_start": 0.0,
+        "travel_end": 1800.0,
+        "unit": "deg",
+        "text": "Turn the quick release nut counter-clockwise five turns to loosen.",
+        "conditions": [
+          {
+            "id": "cau-030",
+            "kind": "caution",
+            "text": "Do not remove the quick release nut completely. It will be lost.",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#cau-030"
+          },
+          {
+            "id": "tool-5mm",
+            "kind": "tool",
+            "text": "tool required",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#tool-5mm"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-030",
+        "segment": [
+          "seg-qrnut"
+        ]
+      },
+      {
+        "id": "stp-040",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 3,
+        "part": "SPK-1210",
+        "motion": "prismatic",
+        "axis": "X",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 150.0,
+        "unit": "mm",
+        "text": "Withdraw the axle skewer from the hub.",
+        "conditions": [],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-040",
+        "segment": [
+          "seg-skewer"
+        ]
+      },
+      {
+        "id": "stp-050",
+        "dm": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML",
+        "order": 4,
+        "part": "SPK-1200",
+        "motion": "prismatic",
+        "axis": "Y",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 120.0,
+        "unit": "mm",
+        "text": "Lift the front wheel clear of the fork dropouts.",
+        "conditions": [
+          {
+            "id": "wrn-050",
+            "kind": "warning",
+            "text": "Support the wheel. It is free once the skewer is withdrawn.",
+            "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#wrn-050"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-01-00A-520A-D_001-00_EN-US.XML#stp-050",
+        "segment": [
+          "seg-wheel"
+        ]
+      },
+      {
+        "id": "stp-110",
+        "dm": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML",
+        "order": 5,
+        "part": "SPK-1500",
+        "motion": "revolute",
+        "axis": "Z",
+        "sense": "positive",
+        "travel_start": 0.0,
+        "travel_end": 1080.0,
+        "unit": "deg",
+        "text": "Install the fender bolt and torque to 5 N.m.",
+        "conditions": [
+          {
+            "id": "cau-110",
+            "kind": "caution",
+            "text": "Do not exceed 5 N.m. The fender mount will strip.",
+            "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#cau-110"
+          },
+          {
+            "id": "tool-tw",
+            "kind": "tool",
+            "text": "tool required",
+            "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#tool-tw"
+          },
+          {
+            "id": "stp-110:torque",
+            "kind": "torque",
+            "text": "5 Nm",
+            "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#stp-110@torque"
+          }
+        ],
+        "source": "DMC-SPOKE1-A-24-10-02-00A-720A-D_001-00_EN-US.XML#stp-110",
+        "segment": [
+          "seg-fbolt"
+        ]
+      }
+    ]
+  },
+  "binding": {
+    "SPK-1000": [
+      "seg-frame"
+    ],
+    "SPK-1100": [
+      "seg-fork"
+    ],
+    "SPK-1110": [
+      "seg-bar"
+    ],
+    "SPK-1200": [
+      "seg-wheel"
+    ],
+    "SPK-1210": [
+      "seg-skewer"
+    ],
+    "SPK-1211": [
+      "seg-qrlever"
+    ],
+    "SPK-1212": [
+      "seg-qrnut"
+    ],
+    "SPK-1300": [
+      "seg-armL"
+    ],
+    "SPK-1301": [
+      "seg-armR"
+    ],
+    "SPK-1310": [
+      "seg-padL"
+    ],
+    "SPK-1311": [
+      "seg-padR"
+    ],
+    "SPK-1400": [
+      "seg-lever"
+    ],
+    "SPK-1500": [
+      "seg-fbolt"
+    ]
+  },
+  "findings": [
+    [
+      "C3",
+      "advisory",
+      "stp-030",
+      "no travel limit stated for SPK-1212; not assumed free"
+    ],
+    [
+      "C3",
+      "advisory",
+      "stp-110",
+      "no travel limit stated for SPK-1500; not assumed free"
+    ]
+  ]
+}

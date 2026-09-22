@@ -1,0 +1,55 @@
+=== COGLINE-style evidence run ===
+topic       DON26BZ05-NV071_3D_TRAINING
+started     2026-09-19T16:30:29Z
+host        Linux 6.8.0-138-generic aarch64
+python      Python 3.10.12
+git         not a repo
+=== reproduce.sh ===
+--- tests first
+test_clean_binding_has_no_failure (test_spokeline.SpokelineTests) ... ok
+test_corpus_shape (test_spokeline.SpokelineTests) ... ok
+test_deterministic_classes_are_detected (test_spokeline.SpokelineTests) ... ok
+test_every_part_bound_to_a_list (test_spokeline.SpokelineTests) ... ok
+test_gltf_export_builds (test_spokeline.SpokelineTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.018s
+
+OK
+--- surrogate corpus (deterministic; identical bytes on every run)
+wrote 4 surrogate data modules to /sessions/rcw-017kbafm3ipng6rkdubvucfq/mnt/2026-09_SBIR_September/DON26BZ05-NV071_3D_TRAINING/08_Analysis/code/spokeline/corpus/s1000d
+--- scored run
+==========================================================================
+SPOKELINE — scored run   seed 20260902, 50 trials per class
+==========================================================================
+corpus     : 4 data modules, 13 parts, 9 joints, 6 steps, 7 constraints
+markings   : 4/4 data modules carry their distribution statement through
+
+clean control (50 runs): 0 false positives, 0.0%   [2 advisories per run]
+
+fault class                    detected       rate   checks that fired
+--------------------------------------------------------------------------
+F1 wrong-part binding             49/50       98.0%   C1 x106, C5 x73
+F2 inverted joint axis            41/50       82.0%   C2 x13, C3 x28
+F3 out-of-range travel            50/50      100.0%   C3 x50
+F4 step transposition             50/50      100.0%   C4 x109
+F5 dropped safety condition       50/50      100.0%   C6 x50
+F6 phantom step                   50/50      100.0%   C4 x47, C7 x50
+--------------------------------------------------------------------------
+OVERALL                          290/300      96.7%
+
+RESIDUAL — every miss, with the reason it was missed:
+  F2 inverted joint axis         9 x  inverted the driven direction of step stp-110
+  F1 wrong-part binding          1 x  bound SPK-1212 and SPK-1211 to each other's geometry
+
+wall clock 0.24 s   ->  runs/latest/metrics.json
+--- glTF export
+wrote /sessions/rcw-017kbafm3ipng6rkdubvucfq/mnt/2026-09_SBIR_September/DON26BZ05-NV071_3D_TRAINING/08_Analysis/code/spokeline/runs/latest/spokeline_front_wheel.gltf  (13 nodes, 13 meshes, 6 animations, 12 KB)
+--- viewer page (self-contained HTML over runs/latest; the seven checks ported to JS)
+wrote /sessions/rcw-017kbafm3ipng6rkdubvucfq/mnt/2026-09_SBIR_September/DON26BZ05-NV071_3D_TRAINING/08_Analysis/code/spokeline/viewer/spokeline_viewer.html  (41 KB)
+--- copy results to 08_Analysis/results and write the manifest
+manifest -> results/manifest.json  run_identifier 346e4b8c6d419337
+--- done
+=== finished ===
+exit code   0
+elapsed     1s
